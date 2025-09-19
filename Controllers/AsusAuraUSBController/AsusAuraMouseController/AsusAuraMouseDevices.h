@@ -54,6 +54,7 @@
 #define AURA_ROG_KERIS_WIRELESS_AIMPOINT_USB_PID        0x1A66
 #define AURA_ROG_KERIS_WIRELESS_AIMPOINT_2_4_PID        0x1A68
 #define AURA_ROG_KERIS_WIRELESS_AIMPOINT_BT_PID         0x1A6A
+#define ASUS_ROG_HARPE_ACE_MINI_2_4_PID			0x1ACE
 #define AURA_TUF_M3_PID                                 0x1910
 #define AURA_TUF_M3_GEN_II_PID                          0x1A9B
 #define AURA_TUF_M5_PID                                 0x1898
@@ -622,6 +623,19 @@ static std::map<int,mouse_type> aura_mouse_devices =
             { AURA_MOUSE_ZONE_LOGO },
             { AURA_MOUSE_MODE_STATIC, AURA_MOUSE_MODE_BREATHING, AURA_MOUSE_MODE_SPECTRUM, AURA_MOUSE_MODE_NONE, AURA_MOUSE_MODE_REACTIVE, AURA_MOUSE_MODE_NONE, AURA_MOUSE_MODE_BATTERY }
         }
+    },
+    {
+	AURA_ROG_HARPE_ACE_MINI_2_4_PID, // ROG Harpe Ace Mini 2.4GHz Dongle
+	{
+	    0,
+	    0,
+	    0,
+	    64,
+	    false,
+	    1, // ??
+	    { AURA_MOUSE_ZONE_SCROLL },
+            { AURA_MOUSE_MODE_STATIC, AURA_MOUSE_MODE_BREATHING, AURA_MOUSE_MODE_SPECTRUM, AURA_MOUSE_MODE_NONE, AURA_MOUSE_MODE_REACTIVE, AURA_MOUSE_MODE_NONE, AURA_MOUSE_MODE_BATTERY }
+	}
     },
     {
         AURA_TUF_M3_PID, // TUF M3
